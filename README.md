@@ -1,1 +1,1 @@
-# You can see it on https://github.com/mmdHosiMosavi/golabi-store
+# You can see it on https://mmdHosiMosavi.github.io/golabi-store
