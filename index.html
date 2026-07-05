@@ -26,6 +26,7 @@
       body {
         font-family: "main";
         direction: rtl;
+        background-color: #f5f5f7;
       }
 
       header a {
@@ -34,7 +35,10 @@
       }
       header h2:hover {
         color: #211f25;
-        transition: 0.7s;
+        transition: 0.3s;
+      }
+      header h2 {
+        transition: 0.3s;
       }
 
       header {
@@ -59,23 +63,21 @@
       }
       .input {
         border: none;
-        padding: 0.7rem;
+        outline: none;
+        border-radius: 15px;
+        padding: 0.7em;
         width: 100%;
-        border-radius: 1rem;
-        background: #e8e8e8;
-        box-shadow:
-          20px 20px 60px #c5c5c5,
-          -20px -20px 60px #ffffff;
-        transition: 0.7s;
+        background-color: #fff8f8;
+        box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: 300ms ease-in-out;
       }
 
       .input:focus {
-        outline-color: #e8e8e8;
-        background: #e8e8e8;
+        background-color: white;
+        transform: scale(1.05);
         box-shadow:
-          inset 20px 20px 60px #c5c5c5,
-          inset -20px -20px 60px #ffffff;
-        transition: 0.3s;
+          13px 13px 100px #cbc8c8,
+          -13px -13px 100px #ffffff;
       }
       #search {
         margin: 3% 7%;
@@ -102,10 +104,11 @@
         background: #fff;
         border-radius: 18px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        transition: 0.3s;
       }
       #items div:hover {
-        width: 55px;
-        height: 55px;
+        transform: scale(1.3);
+
         background-color: #f7efef;
         transition: 0.3s;
       }
@@ -113,7 +116,72 @@
       #items img {
         width: 30px;
         height: 30px;
-        object-fit: contain;
+      }
+      #items a {
+        text-decoration: none;
+        text-align: center;
+        color: #63616a;
+      }
+      #navigator {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background: #fff;
+        border-radius: 20px;
+        padding: 7px 0;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      #navigator a {
+        text-decoration: none;
+        color: #333;
+        flex: 1;
+      }
+
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        transition: 0.3s;
+      }
+
+      .nav-item:hover {
+        transform: translateY(-2px);
+      }
+
+      .nav-item img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .nav-item p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      .Active {
+        background: #f3f4f6;
+        border-radius: 18px;
+        padding: 6px 16px;
+      }
+
+      .Active img {
+        width: 22px;
+        height: 22px;
+      }
+
+      .Active p {
+        font-size: 11px;
       }
     </style>
   </head>
@@ -121,12 +189,15 @@
     <header>
       <a href="#" class="logo">
         <img src="./assets/img/main.webp" alt="Logo" />
-        <h2 style="font-family: bold">گلابی</h2>
+        <h2 style="font-family: bold; font-size: medium">
+          فروشگاه تخصصی لپتاپ گلابی
+        </h2>
       </a>
     </header>
     <div id="search">
       <input
         type="text"
+        autocomplete="off"
         name="text"
         class="input"
         placeholder="جستجو در محصولات ..."
@@ -176,45 +247,72 @@
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
     <div id="lists">
-      <h3 style="padding: 15px">دسته‌بندی‌ها</h3>
+      <h2 style="padding: 15px; font-size: medium">دسته‌بندی‌ها</h2>
       <div id="items">
         <a href="#"
           ><div>
-            <img src="./assets/img/dell-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/dell-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">دل</p>
+        </a>
+
         <a href="#"
           ><div>
-            <img src="./assets/img/hp-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/hp-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">اچ‌پی</p>
+        </a>
         <a href=""
           ><div>
-            <img src="./assets/img/apple-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/apple-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">مک‌بوک</p>
+        </a>
         <a href=""
           ><div>
-            <img src="./assets/img/microsoft-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/microsoft-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">سرفیس</p>
+        </a>
+
         <a href=""
           ><div>
-            <img src="./assets/img/asus-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/asus-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">ایسوس</p>
+        </a>
         <a href=""
           ><div>
-            <img src="./assets/img/lenovo-logo.svg" alt="" /></div
-        ></a>
+            <img src="./assets/img/lenovo-logo.svg" alt="" />
+          </div>
+          <p style="margin-top: 7px">لنوو</p>
+        </a>
       </div>
+    </div>
+    <div id="navigator">
+      <a href="#">
+        <div class="nav-item">
+          <img src="./assets/img/cart.svg" alt="" />
+          <p>سبد خرید</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="nav-item Active">
+          <img src="./assets/img/house.svg" alt="" />
+          <p>خانه</p>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="nav-item">
+          <img src="./assets/img/laptop.svg" alt="" />
+          <p>محصولات</p>
+        </div>
+      </a>
     </div>
   </body>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
