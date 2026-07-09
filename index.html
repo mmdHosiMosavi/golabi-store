@@ -6,6 +6,10 @@
 
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"
+    />
 
     <style>
       * {
@@ -26,7 +30,8 @@
       body {
         font-family: "main";
         direction: rtl;
-        background-color: #fff;
+        background-color: #f5f5f7;
+        position: relative;
       }
 
       header a {
@@ -47,7 +52,9 @@
         align-items: center;
         margin: 5px;
       }
-
+      a {
+        text-decoration: none;
+      }
       .logo {
         display: flex;
         align-items: center;
@@ -137,6 +144,7 @@
         padding: 7px 0;
 
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 999;
       }
 
       #navigator a {
@@ -182,6 +190,103 @@
 
       .Active p {
         font-size: 11px;
+      }
+      main {
+        background: #9a9999;
+        border-radius: 18px;
+        width: 94%;
+        color: #0d0c0c;
+        margin: 20px auto 80px;
+        height: 320px;
+        overflow: hidden;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+      }
+
+      .swiper-slide {
+        background-color: #ffffff;
+        width: 180px !important;
+        overflow: hidden;
+        height: 290px;
+        border-radius: 5px;
+        transition: 0.35s;
+      }
+      .product {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        position: relative;
+      }
+      .product:hover {
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+      }
+      .swiper-slide:hover {
+        transform: translateY(-4px);
+      }
+
+      .first-slider {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+
+      .swiper-slide img {
+        width: 90%;
+        margin: 0 5%;
+        transition: 0.35s;
+      }
+      .swiper-slide:hover img {
+        transform: scale(1.05);
+      }
+
+      .product-link {
+        background-color: #9a9999;
+      }
+      .swiper-slide img.toman {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        display: inline;
+      }
+      .swiper-slide img.bag-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+      }
+      .buton {
+        padding: 0;
+        display: inline-flex;
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+      .buton:hover {
+        transform: scale(1.05);
+      }
+
+      .price-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px;
+        position: fixed;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+      }
+      .arrow {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 85px 40px;
+      }
+      .show-all {
+        text-align: center;
+        margin-top: 25px;
+        color: white;
+        font-family: "bold";
       }
     </style>
   </head>
@@ -254,9 +359,9 @@
       <div id="items">
         <a href="#"
           ><div>
-            <img src="./assets/img/dell-logo.svg" alt="" />
+            <img src="./assets/img/acer-logo.svg" alt="" />
           </div>
-          <p style="margin-top: 7px">دل</p>
+          <p style="margin-top: 7px">ایسر</p>
         </a>
 
         <a href="#"
@@ -265,26 +370,26 @@
           </div>
           <p style="margin-top: 7px">اچ‌پی</p>
         </a>
-        <a href=""
+        <a href="#"
           ><div>
             <img src="./assets/img/apple-logo.svg" alt="" />
           </div>
           <p style="margin-top: 7px">مک‌بوک</p>
         </a>
-        <a href=""
+        <a href="#"
           ><div>
             <img src="./assets/img/microsoft-logo.svg" alt="" />
           </div>
           <p style="margin-top: 7px">سرفیس</p>
         </a>
 
-        <a href=""
+        <a href="#"
           ><div>
             <img src="./assets/img/asus-logo.svg" alt="" />
           </div>
           <p style="margin-top: 7px">ایسوس</p>
         </a>
-        <a href=""
+        <a href="#"
           ><div>
             <img src="./assets/img/lenovo-logo.svg" alt="" />
           </div>
@@ -314,6 +419,83 @@
         </div>
       </a>
     </div>
+    <main>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div style="margin: 0 12px" class="swiper-slide product-link">
+            <a href="#">
+              <img src="./assets/img/amazing.png" alt="" />
+              <img src="./assets/img/amazing-icon.png" alt="" />
+              <p class="show-all">مشاهده همه</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+  <script>
+    fetch("./data.json")
+      .then((res) => res.json())
+      .then((products) => {
+        const wrapper = document.querySelector(".swiper-wrapper");
+        function formatPrice(price) {
+          return Number(price).toLocaleString("fa-IR");
+        }
+        products.slice(8, 16).forEach((product) => {
+          wrapper.innerHTML += `
+
+<div class="swiper-slide product">
+
+<img src="${product.img}" alt="">
+
+
+<strong>
+<p style="text-align:center;margin:0 5px;line-height:1.5">
+${product.name}
+</p>
+</strong>
+
+
+<div style="margin:15px">
+
+<div class="price-box">
+  <span class="price">${formatPrice(product.price)} <span><img class="toman" src="./assets/img/toman.svg" alt="" /></span></span>
+    
+
+
+  <button class="btn btn-secondary buton">
+    <img class="bag-icon" src="./assets/img/bag-plus.svg" alt="">
+  </button>
+</div>
+
+
+
+</div>
+
+</div>
+
+
+`;
+        });
+        wrapper.innerHTML += `
+
+      <div class="swiper-slide">
+            <a class="arrow" href="#">
+              <img src="./assets/img/arrow-left-circle.svg" alt="" />
+              <p class="show-all" style="color: #0d0c0c;">
+                مشاهده همه
+              </p>
+            </a>
+          </div>
+`;
+
+        new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 4,
+          freeMode: true,
+        });
+      });
+  </script>
 </html>

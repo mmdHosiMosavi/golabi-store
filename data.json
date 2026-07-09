@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 F1504VAP",
+    "price": 101800000,
+    "img": "./assets/img/laptop01.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 2,
+    "name": "لپ‌تاپ لنوو مدل IdeaPad 1 15IJL7",
+    "price": 48000000,
+    "img": "./assets/img/laptop02.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 3,
+    "name": "لپ‌تاپ لنوو مدل IdeaPad Slim 3 15IRU8",
+    "price": 71900000,
+    "img": "./assets/img/laptop03.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 4,
+    "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 X1504VA",
+    "price": 75000000,
+    "img": "./assets/img/laptop04.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 5,
+    "name": "لپ تاپ 15.6 اینچی دل مدل Vostro 3530",
+    "price": 79000000,
+    "img": "./assets/img/laptop05.webp",
+    "brand": "Dell"
+  },
+  {
+    "id": 6,
+    "name": "لپ تاپ 15.6 اینچی اچ‌پی مدل fc0171nia",
+    "price": 63000000,
+    "img": "./assets/img/laptop06.webp",
+    "brand": "HP"
+  },
+  {
+    "id": 7,
+    "name": "لپ تاپ 15.6 اینچی اچ‌پی مدل Victus 15",
+    "price": 115000000,
+    "img": "./assets/img/laptop07.webp",
+    "brand": "HP"
+  },
+  {
+    "id": 8,
+    "name": "لپ تاپ 15.6 اینچی لنوو مدل LOQ 15ARP9-R5",
+    "price": 119800000,
+    "img": "./assets/img/laptop08.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 9,
+    "name": "لپ تاپ 12.4 اینچی مایکروسافت مدل Surface Laptop Go 3",
+    "price": 145000000,
+    "img": "./assets/img/laptop09.webp",
+    "brand": "Microsoft"
+  },
+  {
+    "id": 10,
+    "name": "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MGEC4 2026",
+    "price": 654700000,
+    "img": "./assets/img/laptop10.webp",
+    "brand": "Apple"
+  },
+  {
+    "id": 11,
+    "name": "لپ تاپ 13.6 اینچی اپل مدل MacBook Air MC6T4",
+    "price": 119000000,
+    "img": "./assets/img/laptop11.webp",
+    "brand": "Apple"
+  },
+  {
+    "id": 12,
+    "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل G9 250-Celeron",
+    "price": 49000000,
+    "img": "./assets/img/laptop12.webp",
+    "brand": "HP"
+  },
+  {
+    "id": 13,
+    "name": "لپ تاپ 16 اینچی ایسوس مدل TUF Gaming F16",
+    "price": 312000000,
+    "img": "./assets/img/laptop13.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 14,
+    "name": "لپ تاپ 13 اینچی اپل مدل MacBook Neo",
+    "price": 159690000,
+    "img": "./assets/img/laptop14.webp",
+    "brand": "Apple"
+  },
+  {
+    "id": 15,
+    "name": "لپ تاپ 16 اینچی لنوو مدل Legion Pro 7",
+    "price": 875000000,
+    "img": "./assets/img/laptop15.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 16,
+    "name": "لپ تاپ 14.4 اینچی مایکروسافت مدل Surface Laptop Studio",
+    "price": 654900000,
+    "img": "./assets/img/laptop16.webp",
+    "brand": "Microsoft"
+  },
+  {
+    "id": 17,
+    "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل Victus 15 fa2082wm",
+    "price": 143300000,
+    "img": "./assets/img/laptop17.webp",
+    "brand": "HP"
+  },
+  {
+    "id": 18,
+    "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 X1504VA",
+    "price": 74500000,
+    "img": "./assets/img/laptop18.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 19,
+    "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل Victus 15 fb3093dx-R7",
+    "price": 158700000,
+    "img": "./assets/img/laptop19.webp",
+    "brand": "HP"
+  },
+  {
+    "id": 20,
+    "name": "لپ تاپ 14 اینچی ایسوس مدل Vivobook Go 14 E410KA",
+    "price": 41000000,
+    "img": "./assets/img/laptop20.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 21,
+    "name": "لپ تاپ 15.6 اینچی ایسر مدل Aspire Go 15",
+    "price": 86900000,
+    "img": "./assets/img/laptop21.webp",
+    "brand": "Acer"
+  },
+  {
+    "id": 22,
+    "name": "لپ تاپ 15.6 اینچی ایسر مدل Nitro V 15",
+    "price": 133000000,
+    "img": "./assets/img/laptop22.webp",
+    "brand": "Acer"
+  },
+  {
+    "id": 23,
+    "name": "لپ‌تاپ ایسوس مدل Vivobook Go 14 E410KA-CL464",
+    "price": 40599000,
+    "img": "./assets/img/laptop23.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 24,
+    "name": "لپ تاپ 16 اینچی ایسوس مدل ROG Strix G16",
+    "price": 443000000,
+    "img": "./assets/img/laptop24.webp",
+    "brand": "Asus"
+  },
+  {
+    "id": 25,
+    "name": "لپ تاپ 16 اینچی ایسر مدل Aspire Lite AL16",
+    "price": 83990000,
+    "img": "./assets/img/laptop25.webp",
+    "brand": "Acer"
+  },
+  {
+    "id": 26,
+    "name": "لپ تاپ 15.3 اینچی لنوو مدل IdeaPad Slim 3",
+    "price": 114000000,
+    "img": "./assets/img/laptop26.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 27,
+    "name": "لپ تاپ 15.6 اینچی لنوو مدل V15 G4 IRU-i7",
+    "price": 135900000,
+    "img": "./assets/img/laptop27.webp",
+    "brand": "Lenovo"
+  },
+  {
+    "id": 28,
+    "name": "لپ تاپ 13.8 اینچی مایکروسافت مدل Surface Laptop 7",
+    "price": 257000000,
+    "img": "./assets/img/laptop28.webp",
+    "brand": "Microsoft"
+  },
+  {
+    "id": 29,
+    "name": "لپ‌تاپ مایکروسافت مدل Surface Laptop 7 Copilot",
+    "price": 201578000,
+    "img": "./assets/img/laptop29.webp",
+    "brand": "Microsoft"
+  },
+  {
+    "id": 30,
+    "name": "لپ‌تاپ اپل مدل MacBook Air MC7A4 2025 LLA",
+    "price": 229900000,
+    "img": "./assets/img/laptop30.webp",
+    "brand": "Apple"
+  },
+  {
+    "id": 31,
+    "name": "لپ تاپ 16 اینچی اچ‌ پی مدل OMEN Slim 16t",
+    "price": 420000000,
+    "img": "./assets/img/laptop31.webp",
+    "brand": "HP"
+  }
+]
