@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>فروشگاه گلابی</title>
+    <title>فروشگاه تخصصی لپتاپ گلابی</title>
     <link
       rel="shortcut icon"
       href="./assets/img/amazing-icon.png"
@@ -415,7 +415,7 @@
           margin-right: 7%;
         }
       }
-      @media (min-width: 1000px) and (max-width:1400px){
+      @media (min-width: 1000px) and (max-width: 1400px) {
         #lists {
           grid-area: list;
           height: 100%;
@@ -450,7 +450,6 @@
           margin-right: 7%;
         }
       }
-      
     </style>
   </head>
   <body>
@@ -622,6 +621,7 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script>
+    let html = "";
     fetch("./data.json")
       .then((res) => res.json())
       .then((products) => {
@@ -630,7 +630,7 @@
           return Number(price).toLocaleString("fa-IR");
         }
         products.slice(12, 20).forEach((product) => {
-          wrapper.innerHTML += `
+          html+= `
 
 <div class="swiper-slide product">
 
@@ -665,7 +665,7 @@ ${product.name}
 
 `;
         });
-        wrapper.innerHTML += `
+        html+= `
 
       <div class="swiper-slide">
             <a class="arrow" href="#">
@@ -675,7 +675,10 @@ ${product.name}
               </p>
             </a>
           </div>
-`;
+`
+        wrapper.innerHTML += html
+
+;
 
         new Swiper(".mySwiper", {
           slidesPerView: "auto",
