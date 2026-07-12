@@ -361,24 +361,26 @@
           height: 35px;
         }
       }
-      #acer {
-        grid-area: acer;
-      }
-      #hp {
-        grid-area: hp;
-      }
-      #lenovo {
-        grid-area: lenovo;
-      }
+      @media (min-width: 1000px) {
+        #acer {
+          grid-area: acer;
+        }
+        #hp {
+          grid-area: hp;
+        }
+        #lenovo {
+          grid-area: lenovo;
+        }
 
-      #asus {
-        grid-area: asus;
-      }
-      #surface {
-        grid-area: surface;
-      }
-      #apple {
-        grid-area: apple;
+        #asus {
+          grid-area: asus;
+        }
+        #surface {
+          grid-area: surface;
+        }
+        #apple {
+          grid-area: apple;
+        }
       }
       @media (min-width: 1401px) {
         #lists {
@@ -597,7 +599,7 @@
       </div>
     </main>
     <div class="feature-list">
-      <h4 style="text-align: center; margin: 1% 0 3%">اعتماد به ما</h4>
+      <h5 style="text-align: center; margin: 1% 0 3%">اعتماد به ما</h5>
       <div class="features">
         <div class="features-item">
           <img class="features-icon" src="./assets/img/headset.svg" alt="" />
@@ -630,7 +632,7 @@
           return Number(price).toLocaleString("fa-IR");
         }
         products.slice(12, 20).forEach((product) => {
-          html+= `
+          html += `
 
 <div class="swiper-slide product">
 
@@ -665,7 +667,7 @@ ${product.name}
 
 `;
         });
-        html+= `
+        html += `
 
       <div class="swiper-slide">
             <a class="arrow" href="#">
@@ -675,10 +677,8 @@ ${product.name}
               </p>
             </a>
           </div>
-`
-        wrapper.innerHTML += html
-
-;
+`;
+        wrapper.innerHTML += html;
 
         new Swiper(".mySwiper", {
           slidesPerView: "auto",
