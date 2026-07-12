@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>فروشگاه گلابی</title>
-<link rel="shortcut icon" href="./assets/img/amazing-icon.png" type="image/x-icon">
+    <title>فروشگاه گلابی</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/amazing-icon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
     <link
@@ -93,6 +97,9 @@
         margin: 25px 20px;
         border-radius: 24px;
         overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        transition: 0.5s;
+        grid-area: slider;
       }
       #items {
         display: grid;
@@ -101,6 +108,7 @@
         justify-items: center;
         align-items: center;
         padding: 15px;
+        width: 100%;
       }
       #items div {
         width: 45px;
@@ -119,15 +127,19 @@
         background-color: #f7efef;
         transition: 0.3s;
       }
+      .list-text {
+        margin-top: 15%;
+      }
 
       #items img {
-        width: 30px;
-        height: 30px;
+        width: 80%;
+        margin: 5%;
       }
       #items a {
         text-decoration: none;
         text-align: center;
         color: #63616a;
+        font-size: small;
       }
       #navigator {
         position: fixed;
@@ -146,12 +158,8 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         z-index: 999;
       }
-      #slider {
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-        transition: 0.5s;
-      }
       #slider:hover {
-        transform: translateY(-4px) translateX(2px) scale(1.05);
+        transform: scale(1.005);
       }
       #navigator a {
         text-decoration: none;
@@ -205,6 +213,7 @@
         margin: 20px auto 35px;
         height: 320px;
         overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
       }
       .swiper {
         width: 100%;
@@ -262,8 +271,8 @@
       .buton {
         padding: 0;
         display: inline-flex;
-        width: 60px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         align-items: center;
         justify-content: center;
         transition: 0.3s;
@@ -304,15 +313,17 @@
         line-clamp: 2;
         overflow: hidden;
       }
+      .feature-list {
+        background-color: #eae8e8;
+        margin: 0 7% 7%;
+        padding: 10px 0 0;
+        border-radius: 18px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
       .features {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background: #eae8e8;
-        margin: 0 7% 18%;
-        padding: 10px 0 0;
-        border-radius: 18px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
       }
 
       .features-item {
@@ -328,7 +339,7 @@
         border-right: 1px solid #d9d9d9;
       }
       .features-item:hover {
-        transform: scale(1.08) translateY(-5px)scaleX(1.1);
+        transform: scale(1.08) translateY(-5px) scaleX(1.1);
       }
 
       .features-icon {
@@ -338,7 +349,108 @@
       }
       .features-text {
         font-size: small;
+        text-align: center;
       }
+      #list-desc {
+        margin: 3%;
+        font-size: medium;
+      }
+      @media (max-width: 370px) {
+        #items div {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      #acer {
+        grid-area: acer;
+      }
+      #hp {
+        grid-area: hp;
+      }
+      #lenovo {
+        grid-area: lenovo;
+      }
+
+      #asus {
+        grid-area: asus;
+      }
+      #surface {
+        grid-area: surface;
+      }
+      #apple {
+        grid-area: apple;
+      }
+      @media (min-width: 1401px) {
+        #lists {
+          grid-area: list;
+          height: 100%;
+        }
+
+        #first {
+          display: grid;
+          grid-template-columns: 350px 1fr;
+          grid-template-areas: "list slider";
+          margin-bottom: 5%;
+        }
+        #items {
+          height: 100%;
+          display: grid;
+          grid-template-areas:
+            "apple surface"
+            "lenovo asus"
+            "acer hp";
+          gap: 17% 40%;
+          margin-right: 10%;
+          align-content: start;
+        }
+        #items div {
+          width: 70px;
+          height: 70px;
+        }
+
+        .list-text {
+          margin-top: 10px;
+        }
+        #list-desc {
+          margin-right: 7%;
+        }
+      }
+      @media (min-width: 1000px) and (max-width:1400px){
+        #lists {
+          grid-area: list;
+          height: 100%;
+        }
+
+        #first {
+          display: grid;
+          grid-template-columns: 300px 1fr;
+          grid-template-areas: "list slider";
+          margin-bottom: 5%;
+        }
+        #items {
+          height: 100%;
+          display: grid;
+          grid-template-areas:
+            "apple surface"
+            "lenovo asus"
+            "acer hp";
+          gap: 10% 40%;
+          margin-right: 10%;
+          align-content: start;
+        }
+        #items div {
+          width: 50px;
+          height: 50px;
+        }
+
+        .list-text {
+          margin-top: 10px;
+        }
+        #list-desc {
+          margin-right: 7%;
+        }
+      }
+      
     </style>
   </head>
   <body>
@@ -359,93 +471,95 @@
         placeholder="جستجو در محصولات ..."
       />
     </div>
-    <div id="slider">
-      <div
-        id="carouselExampleFade"
-        class="carousel slide carousel-fade"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <a href="#">
-            <div class="carousel-item active">
-              <img
-                src="./assets/img/slider1.webp"
-                class="d-block w-100"
-                alt="slider"
-              />
+    <div id="first">
+      <div id="slider">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <a href="#">
+              <div class="carousel-item active">
+                <img
+                  src="./assets/img/slider1.webp"
+                  class="d-block w-100"
+                  alt="slider"
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/slider2.webp"
+                  class="d-block w-100"
+                  alt="slider"
+                />
+              </div>
+            </a>
+            <a href="#">
+              <div class="carousel-item">
+                <img
+                  src="./assets/img/slider3.webp"
+                  class="d-block w-100"
+                  alt="slider"
+                />
+              </div>
+            </a>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+      </div>
+      <div id="lists">
+        <h2 id="list-desc">دسته‌بندی‌ها</h2>
+        <div id="items">
+          <a href="#" id="acer"
+            ><div>
+              <img src="./assets/img/acer-logo.svg" alt="" />
             </div>
+            <p class="list-text">ایسر</p>
           </a>
-          <a href="#">
-            <div class="carousel-item">
-              <img
-                src="./assets/img/slider2.webp"
-                class="d-block w-100"
-                alt="slider"
-              />
+
+          <a href="#" id="hp"
+            ><div>
+              <img src="./assets/img/hp-logo.svg" alt="" />
             </div>
+            <p class="list-text">اچ‌پی</p>
           </a>
-          <a href="#">
-            <div class="carousel-item">
-              <img
-                src="./assets/img/slider3.webp"
-                class="d-block w-100"
-                alt="slider"
-              />
+          <a href="#" id="apple"
+            ><div>
+              <img src="./assets/img/apple-logo.svg" alt="" />
             </div>
+            <p class="list-text">اپل</p>
+          </a>
+          <a href="#" id="surface"
+            ><div>
+              <img src="./assets/img/microsoft-logo.svg" alt="" />
+            </div>
+            <p class="list-text">سرفیس</p>
+          </a>
+
+          <a href="#" id="asus"
+            ><div>
+              <img src="./assets/img/asus-logo.svg" alt="" />
+            </div>
+            <p class="list-text">ایسوس</p>
+          </a>
+          <a href="#" id="lenovo"
+            ><div>
+              <img src="./assets/img/lenovo-logo.svg" alt="" />
+            </div>
+            <p class="list-text">لنوو</p>
           </a>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleFade"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-      </div>
-    </div>
-    <div id="lists">
-      <h2 style="padding: 15px; font-size: medium">دسته‌بندی‌ها</h2>
-      <div id="items">
-        <a href="#"
-          ><div>
-            <img src="./assets/img/acer-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">ایسر</p>
-        </a>
-
-        <a href="#"
-          ><div>
-            <img src="./assets/img/hp-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">اچ‌پی</p>
-        </a>
-        <a href="#"
-          ><div>
-            <img src="./assets/img/apple-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">مک‌بوک</p>
-        </a>
-        <a href="#"
-          ><div>
-            <img src="./assets/img/microsoft-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">سرفیس</p>
-        </a>
-
-        <a href="#"
-          ><div>
-            <img src="./assets/img/asus-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">ایسوس</p>
-        </a>
-        <a href="#"
-          ><div>
-            <img src="./assets/img/lenovo-logo.svg" alt="" />
-          </div>
-          <p style="margin-top: 7px">لنوو</p>
-        </a>
       </div>
     </div>
     <div id="navigator">
@@ -483,22 +597,25 @@
         </div>
       </div>
     </main>
-    <div class="features">
-      <div class="features-item">
-        <img class="features-icon" src="./assets/img/headset.svg" alt="" />
-        <p class="features-text">پشتیبانی ۲۴/۷</p>
-      </div>
-      <div class="features-item">
-        <img class="features-icon" src="./assets/img/countdown.svg" alt="" />
-        <p class="features-text">۷ روز ضمانت</p>
-      </div>
-      <div class="features-item">
-        <img class="features-icon" src="./assets/img/truck.svg" alt="" />
-        <p class="features-text">ارسال سریع</p>
-      </div>
-      <div class="features-item">
-        <img class="features-icon" src="./assets/img/check-tick.svg" alt="" />
-        <p class="features-text">ضمانت اصالت</p>
+    <div class="feature-list">
+      <h4 style="text-align: center; margin: 1% 0 3%">اعتماد به ما</h4>
+      <div class="features">
+        <div class="features-item">
+          <img class="features-icon" src="./assets/img/headset.svg" alt="" />
+          <p class="features-text">پشتیبانی ۲۴/۷</p>
+        </div>
+        <div class="features-item">
+          <img class="features-icon" src="./assets/img/countdown.svg" alt="" />
+          <p class="features-text">۷ روز ضمانت</p>
+        </div>
+        <div class="features-item">
+          <img class="features-icon" src="./assets/img/truck.svg" alt="" />
+          <p class="features-text">ارسال سریع</p>
+        </div>
+        <div class="features-item">
+          <img class="features-icon" src="./assets/img/check-tick.svg" alt="" />
+          <p class="features-text">ضمانت اصالت</p>
+        </div>
       </div>
     </div>
   </body>
@@ -568,3 +685,4 @@ ${product.name}
       });
   </script>
 </html>
+
