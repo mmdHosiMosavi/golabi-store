@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محصولات</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/img/amazing-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.rtl.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "main";
+        src: url("./assets/fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+      }
+      @font-face {
+        font-family: "bold";
+        src: url("./assets/fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+      }
+
+      body {
+        font-family: "main";
+        direction: rtl;
+        background-color: #f5f5f7;
+      }
+      #navigator a {
+        text-decoration: none;
+        color: #333;
+        flex: 1;
+      }
+
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        transition: 0.3s;
+      }
+
+      .nav-item:hover {
+        transform: translateY(-2px);
+      }
+
+      .nav-item img {
+        width: 20px;
+        height: 20px;
+      }
+
+      .nav-item p {
+        margin: 0;
+        font-size: 11px;
+        line-height: 1;
+      }
+
+      .Active {
+        background: #f3f4f6;
+        border-radius: 18px;
+        padding: 6px 16px;
+      }
+
+      .Active img {
+        width: 22px;
+        height: 22px;
+      }
+
+      .Active p {
+        font-size: 11px;
+      }
+      #navigator {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        background: #fff;
+        border-radius: 20px;
+        padding: 7px 0;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        z-index: 999;
+      }
+      .main-logo {
+        width: 50px;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 15px;
+      }
+      .back-logo {
+        width: 25px;
+      }
+      .product-text {
+        display: inline;
+        font-size: medium;
+        text-align: center;
+      }
+      .search {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      .search__input {
+        width: 100%;
+        height: 46px;
+        border: none;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        padding: 0 50px 0 18px;
+        font-size: 15px;
+        transition: 0.3s;
+      }
+
+      .search__input:focus {
+        outline: none;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+      }
+
+      .search__input::placeholder {
+        color: #999;
+      }
+
+      .search__button {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        border: none;
+        background: transparent;
+      }
+
+      .search__icon {
+        width: 20px;
+        height: 20px;
+        fill: #888;
+        transition: 0.7s;
+      }
+      .search__icon:hover {
+        fill: #000;
+      }
+      .button {
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        width: 28%;
+        padding: 2% 1%;
+        background-color: #fbfafa;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .button:hover {
+        background-color: #fff;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+      #filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4% 7%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navigator">
+      <a href="#">
+        <div class="nav-item">
+          <img src="./assets/img/cart.svg" alt="" />
+          <p>سبد خرید</p>
+        </div>
+      </a>
+      <a href="./all-products.html">
+        <div class="nav-item Active">
+          <img src="./assets/img/laptop.svg" alt="" />
+          <p>محصولات</p>
+        </div>
+      </a>
+      <a href="./index.html">
+        <div class="nav-item">
+          <img src="./assets/img/house.svg" alt="" />
+          <p>خانه</p>
+        </div>
+      </a>
+    </div>
+    <header>
+      <a href="#">
+        <img class="main-logo" src="./assets/img/main.webp" alt="logo" />
+      </a>
+      <h2 class="product-text">همه محصولات</h2>
+      <a href="./index.html">
+        <img class="back-logo" src="./assets/img/caret-left.svg" alt="" />
+      </a>
+    </header>
+    <div class="search">
+      <button class="search__button">
+        <svg class="search__icon" viewBox="0 0 24 24">
+          <path
+            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+          />
+        </svg>
+      </button>
+
+      <input type="text" class="search__input" placeholder="جستجوی لپتاپ..." />
+    </div>
+    <div id="filter">
+      <button class="button">
+        <img src="./assets/img/sort-up.svg" alt="" />
+        <p style="display: inline">مرتب سازی</p>
+      </button>
+      <button class="button">
+        <img src="./assets/img/funnel.svg" alt="" />
+        <p style="display: inline">فیلتر</p>
+      </button>
+      <button class="button">
+        <img src="./assets/img/tag.svg" alt="" />
+        <p style="display: inline">برند</p>
+      </button>
+    </div>
+  </body>
+</html>

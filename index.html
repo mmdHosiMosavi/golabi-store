@@ -581,7 +581,7 @@
         </div>
       </a>
 
-      <a href="#">
+      <a href="./all-products.html">
         <div class="nav-item">
           <img src="./assets/img/laptop.svg" alt="" />
           <p>محصولات</p>
@@ -592,7 +592,7 @@
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div style="margin: 0 12px" class="swiper-slide product-link">
-            <a href="#">
+            <a href="./all-products.html">
               <img src="./assets/img/amazing.png" alt="" />
               <img src="./assets/img/amazing-icon.png" alt="" />
               <p class="show-all">مشاهده همه</p>
@@ -626,8 +626,8 @@
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script>
-    let html = "";
-    fetch("./data.json")
+    let main = "";
+    fetch("./assets/js/data.json")
       .then((res) => res.json())
       .then((products) => {
         const wrapper = document.querySelector(".swiper-wrapper");
@@ -635,7 +635,7 @@
           return Number(price).toLocaleString("fa-IR");
         }
         products.slice(12, 20).forEach((product) => {
-          html += `
+          main += `
 
 <div class="swiper-slide product">
 
@@ -670,10 +670,10 @@ ${product.name}
 
 `;
         });
-        html += `
+        main += `
 
       <div class="swiper-slide">
-            <a class="arrow" href="#">
+            <a class="arrow" href="./all-products.html">
               <img src="./assets/img/arrow-left-circle.svg" alt="" />
               <p class="show-all" style="color: #0d0c0c;">
                 مشاهده همه
@@ -681,7 +681,7 @@ ${product.name}
             </a>
           </div>
 `;
-        wrapper.innerHTML += html;
+        wrapper.innerHTML += main;
 
         new Swiper(".mySwiper", {
           slidesPerView: "auto",
@@ -691,3 +691,4 @@ ${product.name}
       });
   </script>
 </html>
+\
