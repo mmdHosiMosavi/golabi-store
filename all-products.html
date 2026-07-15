@@ -168,7 +168,16 @@
         border-radius: 10px;
         transition: 0.5s;
       }
-      .button:hover {
+      .button-imp{
+        border: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        width: 32%;
+        padding: 2% 1%;
+        background-color: #fbfafa;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .button,.button-imp:hover {
         background-color: #fff;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
       }
@@ -222,17 +231,17 @@
       <input type="text" class="search__input" placeholder="جستجوی لپتاپ..." />
     </div>
     <div id="filter">
-      <button class="button">
+      <button class="button-imp">
         <img src="./assets/img/sort-up.svg" alt="" />
-        <p style="display: inline">مرتب سازی</p>
+        <p style="display: inline;font-size:small">مرتب سازی</p>
       </button>
       <button class="button">
         <img src="./assets/img/funnel.svg" alt="" />
-        <p style="display: inline">فیلتر</p>
+        <p style="display: inline;font-size:small">فیلتر</p>
       </button>
       <button class="button">
         <img src="./assets/img/tag.svg" alt="" />
-        <p style="display: inline">برند</p>
+        <p style="display: inline;font-size:small">برند</p>
       </button>
     </div>
   </body>
