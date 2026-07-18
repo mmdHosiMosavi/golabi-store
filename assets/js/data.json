@@ -2,218 +2,373 @@
   {
     "id": 1,
     "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 F1504VAP",
+    "shortName": "Asus Vivobook 15",
     "price": 101800000,
     "img": "./assets/img/laptop01.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Core 7 150U",
+    "gpu": "Intel Graphics",
+    "ram": "16GB",
+    "ssd": "1TB"
   },
   {
     "id": 2,
     "name": "لپ‌تاپ لنوو مدل IdeaPad 1 15IJL7",
+    "shortName": "Lenovo IdeaPad 1",
     "price": 48000000,
     "img": "./assets/img/laptop02.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Celeron N4500",
+    "gpu": "Intel UHD",
+    "ram": "8GB",
+    "ssd": "256GB"
   },
   {
     "id": 3,
     "name": "لپ‌تاپ لنوو مدل IdeaPad Slim 3 15IRU8",
+    "shortName": "Lenovo IdeaPad Slim 3",
     "price": 71900000,
     "img": "./assets/img/laptop03.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Core 5 120U",
+    "gpu": "Intel Graphics",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 4,
     "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 X1504VA",
+    "shortName": "Asus Vivobook 15",
     "price": 75000000,
     "img": "./assets/img/laptop04.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Core i5-1335U",
+    "gpu": "Intel Iris Xe",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 5,
     "name": "لپ تاپ 15.6 اینچی دل مدل Vostro 3530",
+    "shortName": "Dell Vostro 3530",
     "price": 79000000,
     "img": "./assets/img/laptop05.webp",
-    "brand": "Dell"
+    "brand": "Dell",
+    "cpu": "Core i5-1334U",
+    "gpu": "Intel Iris Xe",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 6,
     "name": "لپ تاپ 15.6 اینچی اچ‌پی مدل fc0171nia",
+    "shortName": "HP 15 fc0171nia",
     "price": 63000000,
     "img": "./assets/img/laptop06.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Ryzen 5 7520U",
+    "gpu": "Radeon 610M",
+    "ram": "8GB",
+    "ssd": "512GB"
   },
   {
     "id": 7,
     "name": "لپ تاپ 15.6 اینچی اچ‌پی مدل Victus 15",
+    "shortName": "HP Victus 15",
     "price": 115000000,
     "img": "./assets/img/laptop07.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Core i5-13420H",
+    "gpu": "RTX 4050",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 8,
     "name": "لپ تاپ 15.6 اینچی لنوو مدل LOQ 15ARP9-R5",
+    "shortName": "Lenovo LOQ 15",
     "price": 119800000,
     "img": "./assets/img/laptop08.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Ryzen 5 7235HS",
+    "gpu": "RTX 3050",
+    "ram": "24GB",
+    "ssd": "512GB"
   },
   {
     "id": 9,
     "name": "لپ تاپ 12.4 اینچی مایکروسافت مدل Surface Laptop Go 3",
+    "shortName": "Surface Laptop Go 3",
     "price": 145000000,
     "img": "./assets/img/laptop09.webp",
-    "brand": "Microsoft"
+    "brand": "Microsoft",
+    "cpu": "Core i5-1235U",
+    "gpu": "Intel Iris Xe",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 10,
     "name": "لپ تاپ 16.2 اینچی اپل مدل MacBook Pro MGEC4 2026",
+    "shortName": "MacBook Pro M4 Max",
     "price": 654700000,
     "img": "./assets/img/laptop10.webp",
-    "brand": "Apple"
+    "brand": "Apple",
+    "cpu": "M4 Max",
+    "gpu": "40-Core GPU",
+    "ram": "48GB",
+    "ssd": "2TB"
   },
   {
     "id": 11,
     "name": "لپ تاپ 13.6 اینچی اپل مدل MacBook Air MC6T4",
+    "shortName": "MacBook Air M4",
     "price": 119000000,
     "img": "./assets/img/laptop11.webp",
-    "brand": "Apple"
+    "brand": "Apple",
+    "cpu": "M4",
+    "gpu": "10-Core GPU",
+    "ram": "16GB",
+    "ssd": "256GB"
   },
   {
     "id": 12,
     "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل G9 250-Celeron",
+    "shortName": "HP 250 G9",
     "price": 49000000,
     "img": "./assets/img/laptop12.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Celeron N4500",
+    "gpu": "Intel UHD",
+    "ram": "8GB",
+    "ssd": "256GB"
   },
   {
     "id": 13,
     "name": "لپ تاپ 16 اینچی ایسوس مدل TUF Gaming F16",
+    "shortName": "Asus TUF Gaming F16",
     "price": 312000000,
     "img": "./assets/img/laptop13.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Core i7-14650HX",
+    "gpu": "RTX 4070",
+    "ram": "32GB",
+    "ssd": "1TB"
   },
   {
     "id": 14,
     "name": "لپ تاپ 13 اینچی اپل مدل MacBook Neo",
+    "shortName": "MacBook Neo",
     "price": 159690000,
     "img": "./assets/img/laptop14.webp",
-    "brand": "Apple"
+    "brand": "Apple",
+    "cpu": "M4",
+    "gpu": "10-Core GPU",
+    "ram": "24GB",
+    "ssd": "512GB"
   },
   {
     "id": 15,
     "name": "لپ تاپ 16 اینچی لنوو مدل Legion Pro 7",
+    "shortName": "Lenovo Legion Pro 7",
     "price": 875000000,
     "img": "./assets/img/laptop15.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Core Ultra 9 275HX",
+    "gpu": "RTX 5090",
+    "ram": "64GB",
+    "ssd": "2TB"
   },
   {
     "id": 16,
     "name": "لپ تاپ 14.4 اینچی مدل Surface",
+    "shortName": "Surface Laptop",
     "price": 654900000,
     "img": "./assets/img/laptop16.webp",
-    "brand": "Microsoft"
+    "brand": "Microsoft",
+    "cpu": "Core Ultra 7 268V",
+    "gpu": "Intel Arc",
+    "ram": "32GB",
+    "ssd": "1TB"
   },
   {
     "id": 17,
     "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل Victus 15 fa2082wm",
+    "shortName": "HP Victus 15",
     "price": 143300000,
     "img": "./assets/img/laptop17.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Core i7-13620H",
+    "gpu": "RTX 4050",
+    "ram": "16GB",
+    "ssd": "1TB"
   },
   {
     "id": 18,
     "name": "لپ تاپ 15.6 اینچی ایسوس مدل Vivobook 15 X1504VA",
+    "shortName": "Asus Vivobook 15",
     "price": 74500000,
     "img": "./assets/img/laptop18.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Core i5-1335U",
+    "gpu": "Intel Iris Xe",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 19,
     "name": "لپ تاپ 15.6 اینچی اچ‌ پی مدل Victus 15 fb3093dx-R7",
+    "shortName": "HP Victus 15",
     "price": 158700000,
     "img": "./assets/img/laptop19.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Ryzen 7 8845HS",
+    "gpu": "RTX 4060",
+    "ram": "32GB",
+    "ssd": "1TB"
   },
   {
     "id": 20,
     "name": "لپ تاپ 14 اینچی ایسوس مدل Vivobook Go 14 E410KA",
+    "shortName": "Asus Vivobook Go 14",
     "price": 41000000,
     "img": "./assets/img/laptop20.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Celeron N4500",
+    "gpu": "Intel UHD",
+    "ram": "8GB",
+    "ssd": "256GB"
   },
   {
     "id": 21,
     "name": "لپ تاپ 15.6 اینچی ایسر مدل Aspire Go 15",
+    "shortName": "Acer Aspire Go 15",
     "price": 86900000,
     "img": "./assets/img/laptop21.webp",
-    "brand": "Acer"
+    "brand": "Acer",
+    "cpu": "Core i5-1334U",
+    "gpu": "Intel Iris Xe",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 22,
     "name": "لپ تاپ 15.6 اینچی ایسر مدل Nitro V 15",
+    "shortName": "Acer Nitro V 15",
     "price": 133000000,
     "img": "./assets/img/laptop22.webp",
-    "brand": "Acer"
+    "brand": "Acer",
+    "cpu": "Core i7-13620H",
+    "gpu": "RTX 4050",
+    "ram": "16GB",
+    "ssd": "1TB"
   },
   {
     "id": 23,
     "name": "لپ‌تاپ ایسوس مدل Vivobook Go 14 E410KA-CL464",
+    "shortName": "Asus Vivobook Go 14",
     "price": 40599000,
     "img": "./assets/img/laptop23.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Celeron N4500",
+    "gpu": "Intel UHD",
+    "ram": "8GB",
+    "ssd": "256GB"
   },
   {
     "id": 24,
     "name": "لپ تاپ 16 اینچی ایسوس مدل ROG Strix G16",
+    "shortName": "Asus ROG Strix G16",
     "price": 443000000,
     "img": "./assets/img/laptop24.webp",
-    "brand": "Asus"
+    "brand": "Asus",
+    "cpu": "Core Ultra 9 275HX",
+    "gpu": "RTX 5080",
+    "ram": "32GB",
+    "ssd": "2TB"
   },
   {
     "id": 25,
     "name": "لپ تاپ 16 اینچی ایسر مدل Aspire Lite AL16",
+    "shortName": "Acer Aspire Lite 16",
     "price": 83990000,
     "img": "./assets/img/laptop25.webp",
-    "brand": "Acer"
+    "brand": "Acer",
+    "cpu": "Ryzen 7 7730U",
+    "gpu": "Radeon Graphics",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 26,
     "name": "لپ تاپ 15.3 اینچی لنوو مدل IdeaPad Slim 3",
+    "shortName": "Lenovo IdeaPad Slim 3",
     "price": 114000000,
     "img": "./assets/img/laptop26.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Core 7 150U",
+    "gpu": "Intel Graphics",
+    "ram": "16GB",
+    "ssd": "1TB"
   },
   {
     "id": 27,
     "name": "لپ تاپ 15.6 اینچی لنوو مدل V15 G4 IRU-i7",
+    "shortName": "Lenovo V15 G4",
     "price": 135900000,
     "img": "./assets/img/laptop27.webp",
-    "brand": "Lenovo"
+    "brand": "Lenovo",
+    "cpu": "Core i7-1355U",
+    "gpu": "MX550",
+    "ram": "16GB",
+    "ssd": "1TB"
   },
   {
     "id": 28,
     "name": "لپ تاپ 13.8 اینچی مایکروسافت مدل Surface Laptop 7",
+    "shortName": "Surface Laptop 7",
     "price": 257000000,
     "img": "./assets/img/laptop28.webp",
-    "brand": "Microsoft"
+    "brand": "Microsoft",
+    "cpu": "Snapdragon X Elite",
+    "gpu": "Adreno X1",
+    "ram": "32GB",
+    "ssd": "1TB"
   },
   {
     "id": 29,
     "name": "لپ‌تاپ مایکروسافت مدل Surface Laptop 7 Copilot",
+    "shortName": "Surface Laptop 7",
     "price": 201578000,
     "img": "./assets/img/laptop29.webp",
-    "brand": "Microsoft"
+    "brand": "Microsoft",
+    "cpu": "Snapdragon X Plus",
+    "gpu": "Adreno X1",
+    "ram": "16GB",
+    "ssd": "512GB"
   },
   {
     "id": 30,
     "name": "لپ‌تاپ اپل مدل MacBook Air MC7A4 2025 LLA",
+    "shortName": "MacBook Air M4",
     "price": 229900000,
     "img": "./assets/img/laptop30.webp",
-    "brand": "Apple"
+    "brand": "Apple",
+    "cpu": "M4",
+    "gpu": "10-Core GPU",
+    "ram": "24GB",
+    "ssd": "512GB"
   },
   {
     "id": 31,
     "name": "لپ تاپ 16 اینچی اچ‌ پی مدل OMEN Slim 16t",
+    "shortName": "HP OMEN Slim 16",
     "price": 420000000,
     "img": "./assets/img/laptop31.webp",
-    "brand": "HP"
+    "brand": "HP",
+    "cpu": "Core Ultra 9 275HX",
+    "gpu": "RTX 5080",
+    "ram": "32GB",
+    "ssd": "2TB"
   }
 ]

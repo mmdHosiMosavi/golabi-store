@@ -162,26 +162,25 @@
       .button {
         border: none;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        width: 25%;
+        width: 29%;
         padding: 2% 1%;
         background-color: #fbfafa;
         border-radius: 10px;
         transition: 0.5s;
       }
-      .button-imp{
+      .button-imp {
         border: none;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        width: 32%;
+        width: 35%;
         padding: 2% 1%;
+        font-size: large;
         background-color: #fbfafa;
         border-radius: 10px;
         transition: 0.5s;
       }
+
+      .button-imp:hover,
       .button:hover {
-        background-color: #fff;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-      }
-      .button-imp:hover {
         background-color: #fff;
         box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
       }
@@ -189,7 +188,121 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 4% 7%;
+        margin: 4% 5%;
+      }
+      main {
+        margin: 15px;
+        margin-bottom: 20%;
+      }
+      .product {
+        height: 140px;
+        background: #ffffff;
+        width: 100%;
+        margin: 20px 0;
+        border-radius: 18px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.002);
+        transition: 0.5s;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        padding-left: 2%;
+      }
+      .product:hover {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+      }
+      .product-image {
+        height: 130px;
+        padding: 5px 15px;
+        transition: 0.6s;
+      }
+      .product-image:hover {
+        transform: scale(1.03);
+      }
+
+      .info {
+        margin-top: 5%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .info h6 {
+        margin: 0 0 10px;
+        font-size: 14px;
+        color: #030303;
+        transition: 0.3s;
+      }
+      .info h6:hover {
+        color: #000;
+      }
+
+      .info p,
+      .info p span {
+        margin: 0 0 10px;
+        font-size: 9px;
+        color: #666;
+        transition: 0.3s;
+      }
+      .info p:hover,
+      .info p span:hover {
+        color: #363636;
+        transform: scale(1.005);
+      }
+
+      .info span {
+        color: #000000;
+        font-family: "bold";
+        font-size: 15px;
+        transition: 0.3s;
+      }
+      .info span:hover{
+        color: #040404;
+        transform: scale(1.01);
+      }
+      .product button {
+        height: 40px;
+        width: auto;
+      }
+      .product button img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+      }
+      .button-box {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10%;
+      }
+      @media (max-width: 371px) {
+        .info h6 {
+          margin: 0 0 10px;
+          font-size: 12px;
+        }
+
+        .info p,
+        .info p span {
+          margin: 0 0 10px;
+          font-size: 8px;
+          color: #666;
+        }
+
+        .info span {
+          font-size: 13px;
+        }
+        .product button {
+          height: 34px;
+          width: 40px;
+        }
+        .product-image {
+          height: 130px;
+          padding: 20px 15px;
+        }
+        .info {
+          margin-top: 8%;
+        }
       }
     </style>
   </head>
@@ -237,16 +350,147 @@
     <div id="filter">
       <button class="button-imp">
         <img src="./assets/img/sort-up.svg" alt="" />
-        <p style="display: inline;font-size:small">مرتب سازی</p>
+        <p style="display: inline; font-size: small">مرتب سازی</p>
       </button>
       <button class="button">
         <img src="./assets/img/funnel.svg" alt="" />
-        <p style="display: inline;font-size:small">فیلتر</p>
+        <p style="display: inline; font-size: small">فیلتر</p>
       </button>
       <button class="button">
         <img src="./assets/img/tag.svg" alt="" />
-        <p style="display: inline;font-size:small">برند</p>
+        <p style="display: inline; font-size: small">برند</p>
       </button>
     </div>
+    <main>
+      <div class="product">
+        <img class="product-image" src="./assets/img/laptop01.webp" alt="" />
+
+        <div class="info">
+          <h6>Asus Vivobook 15</h6>
+          <p>Core 7 150U <span>|</span> 16GB <span>|</span> 1TB SSD</p>
+
+          <p>
+            <img
+              style="height: 10px"
+              src="./assets/img/green-circle.svg"
+              alt=""
+            />
+            موجود
+          </p>
+
+          <span>۱۰۱,۸۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="btn btn-dark">
+            <img src="./assets/img/add-to-cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="./assets/img/laptop02.webp" alt="" />
+
+        <div class="info">
+          <h6>Lenovo IdeaPad 1</h6>
+          <p>Core i3 1215U <span>|</span> 8GB <span>|</span> 512GB SSD</p>
+
+          <p>
+            <img
+              style="height: 10px"
+              src="./assets/img/green-circle.svg"
+              alt=""
+            />
+            موجود
+          </p>
+
+          <span>۳۴,۹۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="btn btn-dark">
+            <img src="./assets/img/add-to-cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="./assets/img/laptop03.webp" alt="" />
+
+        <div class="info">
+          <h6>Lenovo IdeaPad Slim 3</h6>
+          <p>Core i5 13420H <span>|</span> 16GB <span>|</span> 512GB SSD</p>
+
+          <p>
+            <img
+              style="height: 10px"
+              src="./assets/img/green-circle.svg"
+              alt=""
+            />
+            موجود
+          </p>
+
+          <span>۵۲,۸۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="btn btn-dark">
+            <img src="./assets/img/add-to-cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="./assets/img/laptop04.webp" alt="" />
+
+        <div class="info">
+          <h6>Asus Vivobook 15</h6>
+          <p>Core i5 1335U <span>|</span> 16GB <span>|</span> 512GB SSD</p>
+
+          <p>
+            <img
+              style="height: 10px"
+              src="./assets/img/green-circle.svg"
+              alt=""
+            />
+            موجود
+          </p>
+
+          <span>۴۷,۵۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="btn btn-dark">
+            <img src="./assets/img/add-to-cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="./assets/img/laptop05.webp" alt="" />
+
+        <div class="info">
+          <h6>Dell Vostro 3530</h6>
+          <p>Core i7 1355U <span>|</span> 16GB <span>|</span> 512GB SSD</p>
+
+          <p>
+            <img
+              style="height: 10px"
+              src="./assets/img/green-circle.svg"
+              alt=""
+            />
+            موجود
+          </p>
+
+          <span>۵۸,۹۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <div class="button-box">
+          <button type="button" class="btn btn-dark">
+            <img src="./assets/img/add-to-cart.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
