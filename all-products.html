@@ -232,6 +232,11 @@
         font-size: 14px;
         color: #030303;
         transition: 0.3s;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        overflow: hidden;
       }
       .info h6:hover {
         color: #000;
@@ -256,7 +261,7 @@
         font-size: 15px;
         transition: 0.3s;
       }
-      .info span:hover{
+      .info span:hover {
         color: #040404;
         transform: scale(1.01);
       }
